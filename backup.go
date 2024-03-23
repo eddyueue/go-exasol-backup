@@ -74,6 +74,7 @@ type Conf struct {
 }
 
 func Backup(cfg Conf) error {
+	print("starting logging")
 	err := initLogging(cfg.LogLevel)
 	if err != nil {
 		return err
