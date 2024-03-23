@@ -71,7 +71,7 @@ func getUsersToBackup(conn *exasol.Conn) ([]*user, error) {
 			   user_comment,
 			   password_state,
 			   password_expiry_policy,
-			   openid_subject
+			   null as openid_subject
 		FROM exa_dba_users
 		WHERE user_name != 'SYS'
 		ORDER BY local.s`,
