@@ -10,7 +10,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/grantstreetgroup/go-exasol-client"
+	"github.com/eddyueue/go-exasol-client"
 )
 
 type table struct {
