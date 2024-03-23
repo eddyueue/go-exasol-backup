@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/grantstreetgroup/go-exasol-client"
+	"github.com/eddyueue/go-exasol-client"
 )
 
 // This backs up schemas and virtual schemas.
