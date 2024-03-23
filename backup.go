@@ -204,7 +204,7 @@ func initLogging(logLevelStr string) error {
 	if logLevelStr == "" {
 		logLevelStr = "warning"
 	}
-	lvl, err := logrus.SetLevel(log.WarnLevel)
+	lvl, err := logrus.SetLevel(logrus.WarnLevel)
 	if err != nil {
 		return err
 	}
