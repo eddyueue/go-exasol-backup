@@ -204,8 +204,14 @@ func initLogging(logLevelStr string) error {
 	if logLevelStr == "" {
 		logLevelStr = "warning"
 	}
-	lvl, err := logrus.SetLevel(logrus.WarnLevel)
+	plvl, err := logrus.ParseLevel(logLevelStr)
 	if err != nil {
+		print("error parsing log level")
+		return err
+	}
+	lvl, err := logrus.SetLevel(plvl)
+	if err != nil {
+		print("error setting log level")
 		return err
 	}
 	log.SetLevel(lvl)
