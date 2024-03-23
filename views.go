@@ -8,7 +8,7 @@ import (
 	"regexp"
 	"sync"
 
-	"github.com/grantstreetgroup/go-exasol-client"
+	"github.com/eddyueue/go-exasol-client"
 )
 
 type view struct {
