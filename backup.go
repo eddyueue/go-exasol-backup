@@ -13,7 +13,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/grantstreetgroup/go-exasol-client"
+	"github.com/eddyueue/go-exasol-client"
 	"github.com/sirupsen/logrus"
 )
 
